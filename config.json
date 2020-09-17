@@ -1,0 +1,25 @@
+{
+    "source_db": "test",
+    "source_collection": "test_collection",
+    "target_db": "test",
+    "target_collection": "test_collection_copy",
+    "dump_filepath": "test.txt",
+    "filter": {
+    },
+    "projection": {
+        "name": 1,
+        "address": 1,
+        "_id": 0
+    },
+    "fields_to_anonymise": [
+        {
+            "field_name": "name",
+            "field_type": "name"
+        },
+        {
+            "field_name": "address",
+            "field_type": "address"
+        }
+    ],
+    "chunksize": 10000
+}
